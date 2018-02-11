@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebPruebaData.Entities.tblEmpresa>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NIFEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomComercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPoblacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CelEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaxEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirImagEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirCopiaTickets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActivoEmpresa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NIFEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomComercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdPoblacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CelEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaxEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirImagEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirCopiaTickets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActivoEmpresa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdEmpresa }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdEmpresa }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdEmpresa })
+        </td>
+    </tr>
+}
+
+</table>

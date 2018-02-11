@@ -1,0 +1,146 @@
+﻿@model WebPruebaData.Entities.tblEmpresa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblEmpresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NIFEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NIFEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomComercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomComercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DesEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DesEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPoblacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPoblacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CelEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CelEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaxEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaxEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirImagEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirImagEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirCopiaTickets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirCopiaTickets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivoEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivoEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogoEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoTickets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogoTickets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoReducido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogoReducido)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdEmpresa }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

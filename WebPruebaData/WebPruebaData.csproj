@@ -1,7 +1,100 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FAD6A8-3153-4842-A292-27B2647690CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPruebaData</RootNamespace>
+    <AssemblyName>WebPruebaData</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\DataModel.cs" />
+    <Compile Include="Entities\tblArea.cs" />
+    <Compile Include="Entities\tblBanco.cs" />
+    <Compile Include="Entities\tblCaja.cs" />
+    <Compile Include="Entities\tblCausa.cs" />
+    <Compile Include="Entities\tblCliente.cs" />
+    <Compile Include="Entities\tblColumnasLibroGasto.cs" />
+    <Compile Include="Entities\tblConcepto.cs" />
+    <Compile Include="Entities\tblCuenta.cs" />
+    <Compile Include="Entities\tblDetalle.cs" />
+    <Compile Include="Entities\tblDetallesGrupos.cs" />
+    <Compile Include="Entities\tblDetallesProducto.cs" />
+    <Compile Include="Entities\tblDireccionesCliente.cs" />
+    <Compile Include="Entities\tblDondeNosConocio.cs" />
+    <Compile Include="Entities\tblEmpresa.cs" />
+    <Compile Include="Entities\tblEntradasCab.cs" />
+    <Compile Include="Entities\tblEntradasDet.cs" />
+    <Compile Include="Entities\tblEntregasCuenta.cs" />
+    <Compile Include="Entities\tblEstadosPedido.cs" />
+    <Compile Include="Entities\tblFormaComunicacion.cs" />
+    <Compile Include="Entities\tblFormasPago.cs" />
+    <Compile Include="Entities\tblGrupos.cs" />
+    <Compile Include="Entities\tblPedidosCliente.cs" />
+    <Compile Include="Entities\tblPoblacione.cs" />
+    <Compile Include="Entities\tblProducto.cs" />
+    <Compile Include="Entities\tblProveedore.cs" />
+    <Compile Include="Entities\tblProvincia.cs" />
+    <Compile Include="Entities\tblSalidasCab.cs" />
+    <Compile Include="Entities\tblSalidasDet.cs" />
+    <Compile Include="Entities\tblSeriesFactura.cs" />
+    <Compile Include="Entities\tblStock.cs" />
+    <Compile Include="Entities\tblSubgrupos.cs" />
+    <Compile Include="Entities\tblTiposGrupos.cs" />
+    <Compile Include="Entities\tblUmedida.cs" />
+    <Compile Include="Entities\tblUsuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aaa\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
