@@ -85,6 +85,7 @@
     <Compile Include="Entities\tblUmedida.cs" />
     <Compile Include="Entities\tblUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultados\PedidoCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
@@ -93,8 +94,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="aaa\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
